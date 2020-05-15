@@ -27,7 +27,7 @@ describe('#getCreditCardOperatorByInitalsNumber', () => {
     ${null}       |   ${null}     
     ${undefined}  |   ${''}
 `('getCreditCardOperatorByInitalsNumber should throw an error with $expected prefix', async ({ payload, expected }) => {
-      expect(() => { getCreditCardOperatorByInitalsNumber(payload) }).toThrow(`${expected} is an invalid value, please enter with a valid credit card number!`)
+      expect(() => { getCreditCardOperatorByInitalsNumber(payload) }).toThrow(`${expected} is an invalid value or type, please see documentations for more infos!`)
     });
 
   })
