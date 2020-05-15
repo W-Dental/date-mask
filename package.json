@@ -1,8 +1,8 @@
 {
-  "name": "@wd/lib-boilerplate",
+  "name": "@wd/credit-card-name",
   "version": "0.0.1",
   "sideEffects": false,
-  "description": "A boilerplate for future libs",
+  "description": "Lib for get credit card flag by initials numbers",
   "files": [
     "dist/",
     "types/"
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/W-Dental/lib-boilerplate.git"
+    "url": "git+https://github.com/W-Dental/credit-card-name.git"
   },
   "keywords": [
     "boilerplate",
@@ -32,9 +32,9 @@
   "author": "W-Dental",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/W-Dental/lib-boilerplate/issues"
+    "url": "https://github.com/W-Dental/credit-card-name/issues"
   },
-  "homepage": "https://github.com/W-Dental/lib-boilerplate#readme",
+  "homepage": "https://github.com/W-Dental/credit-card-name#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-typescript": "^7.9.0",
