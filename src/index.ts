@@ -1,5 +1,4 @@
 import { CREDIT_CARD_CONFIG } from './constant';
-import { CreditCardConfig } from '../types/CreditCardConfig';
 
 export default function getCreditCardOperatorByInitalsNumber(creditNumber = ''): string {
   try {
@@ -7,6 +6,6 @@ export default function getCreditCardOperatorByInitalsNumber(creditNumber = ''):
     const result =  CREDIT_CARD_CONFIG.find(creditcard => creditcard.regexpBin.test(normalizedCreditNumber));
     return result!.name;
   } catch(e) {
-    throw `${creditNumber} is an invalid value or type, please see documentations for more infos!`
+    throw new Error(`${creditNumber} is an invalid value or type, please see documentations for more infos!`);
   }
 }
