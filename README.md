@@ -14,7 +14,7 @@
  `` 'You must to pass a digits as string with pattern DD/MM/YYYY or MM/DD/YYYY'``   
 
 ## Dependencies
-* node >= 12
+   * node >= 12
 
 ## Configuration
 1. Install packages using `npm i`
