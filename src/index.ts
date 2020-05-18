@@ -1,11 +1,20 @@
-import { CREDIT_CARD_CONFIG } from './constant';
+import { LETTERS_REGEX, ONLY_NUMBERS_REGEX } from './constant';
 
-export default function getCreditCardOperatorByInitalsNumber(creditNumber = ''): string {
-  try {
-    const normalizedCreditNumber = creditNumber.replace(/\s/g, '');
-    const result =  CREDIT_CARD_CONFIG.find(creditcard => creditcard.regexpBin.test(normalizedCreditNumber));
-    return result!.name;
-  } catch(e) {
-    throw new Error(`${creditNumber} is an invalid value or type, please see documentations for more infos!`);
+export default function birthDateMask(num = '') {
+  if (typeof num !== 'string' || LETTERS_REGEX.test(num)) {
+    throw new Error(
+      'You must to pass a digits as string with pattern DD/MM/YYYY or MM/DD/YYYY'
+    )
   }
+
+  const numString = num.replace(ONLY_NUMBERS_REGEX, '');
+
+  if (numString.length === 3)
+    return numString.replace(/(\d{2})/, '$1/');
+  if (numString.length > 3 && numString.length < 5)
+    return numString.replace(/(\d{2})(\d+)/, '$1/$2');
+  if (numString.length >= 5 && numString.length <= 8)
+    return numString.replace(/(\d{2})(\d{2})(\d+)/, '$1/$2/$3');
+  else
+    return numString.substring(0, 10);
 }
