@@ -1,17 +1,17 @@
-# credit-card-name
-    Lib for get credit card flag by initials numbers
-    Lib para pegar bandeira do cartão de crédito pelos números iniciais
+# birth-date-mask
+    Lib for using as maks for date input
+    Lib para ser usada como máscara de entrada de data
 
 ## Funcionamento:
- ``import getCreditCardOperatorByInitalsNumber from credit-card-name;``
+ ``import birthDateMask from birth-date-mask;``
 
-    The used params must be string and must be a valid value
-    O parâmetro usado tem que ser do tipo string e deve ser um valor válido
- ``const creditCardFlag: string = getCreditCardOperatorByInitalsNumber('4230 9130 2912 1023');``
+    The used params must be string and must be a valid value with these patterns: DD/MM/YYYY or MM/DD/YYYY 
+    O parâmetro usado tem que ser do tipo string e deve ser um valor válido com estes padrões: DD/MM/YYYY ou MM/DD/YYYY
+ ``const birthDate: string = birthDateMask('13081992');``
 
     If not be a valid value, it will throw an error
     Caso não seja um valor válido, ele irá disparar um erro 
- `` {YOUR_VALUE} is an invalid value or type, please see documentations for more infos!``   
+ `` 'You must to pass a digits as string with pattern DD/MM/YYYY or MM/DD/YYYY'``   
 
 # Dependencies
 * node >= 12
