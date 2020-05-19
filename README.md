@@ -2,7 +2,7 @@
     Lib for using as maks for date input
     Lib para ser usada como máscara de entrada de data
 
-## Funcionamento:
+## Funcionamento
  ``import birthDateMask from birth-date-mask;``
 
     The used params must be string and must be a valid value with these patterns: DD/MM/YYYY or MM/DD/YYYY 
