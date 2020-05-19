@@ -1,1 +1,1 @@
-export default function birthDateMask(num?: string): string;
+export default function dateMask(num?: string): string;

@@ -1,6 +1,6 @@
-import birthDateMask from '../src';
+import dateMask from '../src';
 
-describe('#birthDateMask', () => {
+describe('#dateMask', () => {
   describe('Only with numbers', () => {
     test.each`
       date          | expected
@@ -13,7 +13,7 @@ describe('#birthDateMask', () => {
       ${'1308199'}  | ${'13/08/199'}
       ${'13081992'} | ${'13/08/1992'}
     `('should parse $date to $expected', ({ date, expected }) => {
-      expect(birthDateMask(date)).toEqual(expected);
+      expect(dateMask(date)).toEqual(expected);
     })
   })
 
@@ -29,7 +29,7 @@ describe('#birthDateMask', () => {
       ${'13/08/199'}  | ${'13/08/199'}
       ${'13/08/1992'} | ${'13/08/1992'}
     `('should parse $date to $expected', ({ date, expected }) => {
-      expect(birthDateMask(date)).toEqual(expected);
+      expect(dateMask(date)).toEqual(expected);
     });
   });
 
@@ -39,7 +39,7 @@ describe('#birthDateMask', () => {
       ${''}
       ${undefined}
     `('should parse $date to $expected', ({ date }) => {
-      expect(birthDateMask(date)).toEqual('');
+      expect(dateMask(date)).toEqual('');
     });
   });
 
@@ -55,7 +55,7 @@ describe('#birthDateMask', () => {
       ${'13,08!199'}  | ${'13/08/199'}
       ${'13[08]1992'} | ${'13/08/1992'}
     `('should parse $date to $expected', ({ date, expected }) => {
-      expect(birthDateMask(date)).toEqual(expected);
+      expect(dateMask(date)).toEqual(expected);
     });
   });
 
@@ -69,7 +69,7 @@ describe('#birthDateMask', () => {
       ${null}
     `('should throw an error', ({ payload }) => {
       expect(() => {
-        birthDateMask(payload);
+        dateMask(payload);
       }).toThrow(
         'You must to pass a digits as string with pattern DD/MM/YYYY or MM/DD/YYYY'
       );
