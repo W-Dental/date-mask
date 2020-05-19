@@ -1,5 +1,5 @@
 {
-  "name": "@wd/birth-date-mask",
+  "name": "@w.dental/birth-date-mask",
   "version": "0.0.1",
   "sideEffects": false,
   "description": "Lib for using as maks for date input",
