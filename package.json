@@ -1,6 +1,6 @@
 {
   "name": "@w.dental/date-mask",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "sideEffects": false,
   "description": "Lib for using as maks for date input",
   "files": [
