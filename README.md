@@ -1,5 +1,6 @@
 # date-mask
 [![Codacy Quality](https://app.codacy.com/project/badge/Grade/4d32ff0c02374a6bb5ebf6508849677c)](https://www.codacy.com/gh/W-Dental/date-mask?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=W-Dental/date-mask&amp;utm_campaign=Badge_Grade)
+[![Code Coverage](https://app.codacy.com/project/badge/Coverage/4d32ff0c02374a6bb5ebf6508849677c)](https://www.codacy.com/gh/W-Dental/date-mask?utm_source=github.com&utm_medium=referral&utm_content=W-Dental/date-mask&utm_campaign=Badge_Coverage)
 ![Minified Size](https://img.shields.io/bundlephobia/min/@w.dental/date-mask)
 ![Minzipped Size](https://img.shields.io/bundlephobia/minzip/@w.dental/date-mask)
 
