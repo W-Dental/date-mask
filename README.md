@@ -1,7 +1,4 @@
 # date-mask
-
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8cd833f6f9974310ab7a6f68e9d429be)](https://app.codacy.com/gh/W-Dental/date-mask?utm_source=github.com&utm_medium=referral&utm_content=W-Dental/date-mask&utm_campaign=Badge_Grade_Settings)
-
     Lib for using as maks for date input
     Lib para ser usada como máscara de entrada de data
 
