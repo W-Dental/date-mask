@@ -18,7 +18,8 @@
     "build": "bili",
     "lint": "./node_modules/.bin/eslint ./src/** ./test/**",
     "prepublishOnly": "npm test && npm run build",
-    "test": "jest --collect-coverage"
+    "test": "jest --collect-coverage",
+    "test-coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
