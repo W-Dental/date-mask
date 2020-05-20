@@ -1,4 +1,6 @@
 # date-mask
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FW-Dental%2Fdate-mask.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FW-Dental%2Fdate-mask?ref=badge_shield)
+
     Lib for using as maks for date input
     Lib para ser usada como máscara de entrada de data
 
@@ -20,3 +22,6 @@
 1. Install packages using `npm i`
 2. Update package's name and description on `package.json`
 3. Update {{LIB_NAME}} on `.bilirc.ts`
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FW-Dental%2Fdate-mask.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FW-Dental%2Fdate-mask?ref=badge_large)
