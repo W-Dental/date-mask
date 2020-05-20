@@ -1,6 +1,6 @@
 import { LETTERS_REGEX, ONLY_NUMBERS_REGEX } from './constant';
 
-export default function birthDateMask(num = ''): string {
+export default function dateMask(num = ''): string {
   if (typeof num !== 'string' || LETTERS_REGEX.test(num)) {
     throw new Error(
       'You must to pass a digits as string with pattern DD/MM/YYYY or MM/DD/YYYY'
