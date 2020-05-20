@@ -1,6 +1,6 @@
 {
   "name": "@w.dental/date-mask",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "sideEffects": false,
   "description": "Lib for using as maks for date input",
   "files": [
@@ -18,7 +18,8 @@
     "build": "bili",
     "lint": "./node_modules/.bin/eslint ./src/** ./test/**",
     "prepublishOnly": "npm test && npm run build",
-    "test": "jest --collect-coverage"
+    "test": "jest --collect-coverage",
+    "test-coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
