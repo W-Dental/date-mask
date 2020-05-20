@@ -10,7 +10,7 @@ const configuration: Configuration = {
       'umd',
       'umd-min'
     ],
-    moduleName: '{{LIB_NAME}}'
+    moduleName: 'dateMask'
   },
   plugins: {
     'typescript2': {
