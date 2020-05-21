@@ -1,5 +1,6 @@
 # date-mask
 [![DeepScan grade](https://deepscan.io/api/teams/9337/projects/11811/branches/175572/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=9337&pid=11811&bid=175572)
+[![codecov](https://codecov.io/gh/W-Dental/date-mask/branch/master/graph/badge.svg)](https://codecov.io/gh/W-Dental/date-mask)
 ![Minified Size](https://img.shields.io/bundlephobia/min/@w.dental/date-mask)
 ![Minzipped Size](https://img.shields.io/bundlephobia/minzip/@w.dental/date-mask)
 
